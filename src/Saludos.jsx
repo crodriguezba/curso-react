@@ -9,4 +9,5 @@ const Saludos = ({ nombre }) => {
         </div>
     );
 }
+
 export default Saludos;
