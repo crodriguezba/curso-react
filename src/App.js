@@ -4,6 +4,7 @@ import './App.css';
 import Saludos from './Saludos';
 import Counter from './Counter';
 import Saludosv2 from './Saludosv2';
+import TaskList from './components/TaskList';
 
 function App() {
   const [nombre, setNombre] = useState('');
@@ -28,13 +29,9 @@ function App() {
   return (
     <>
       <header className="App-header">
-        
-        <Saludos />
-        <Counter />
         <div style={styles.container}>
           <div style={styles.inputContainer}>
-            <input type='text' onChange={(e) => setNombre(e.target.value)} value={nombre} placeholder='Escriba aquí su nombre...' style={styles.input} />
-            <Saludosv2 nombre ={nombre || 'Usuario'} />
+          <TaskList />
           </div>
         </div>
       </header>
@@ -42,7 +39,7 @@ function App() {
         
       </main>
       <footer>
-        
+
       </footer>
     </>
   );
