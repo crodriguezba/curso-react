@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import TaskItem from "./TaskItem";
+import TaskForm from "./task/TaskForm";
 
 const TaskList = ({ tasks }) => {
     const [localTasks, setLocalTasks] = useState([]);
@@ -33,6 +34,8 @@ const TaskList = ({ tasks }) => {
                     placeholder="Add a new task"
                 />
                 <button onClick={addTask}>Add</button>
+                <TaskForm onAddTask={addTask} />
+                
             </div>
 
             {
