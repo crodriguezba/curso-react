@@ -34,7 +34,7 @@ const TaskList = ({ tasks }) => {
                     placeholder="Add a new task"
                 />
                 <button onClick={addTask}>Add</button>
-                <TaskForm onAddTask={addTask} />
+                {/* <TaskForm onAddTask={addTask} /> */}
                 
             </div>
 
